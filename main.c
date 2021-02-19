@@ -1,12 +1,14 @@
 #include <stdio.h>
 
+int osszeg(int,int);
 int main() {
-    int x=7;
-    x++;
-    if(x<9)
-    {
-        x++;
-    }
-    printf( "%d",x);
+    int x,y;
+    scanf("%i%i",&x,&y);
+    x=osszeg(x,y);
+    printf("%i",x);
     return 0;
+}
+int osszeg(int x,int y)
+{
+    return x+y;
 }
